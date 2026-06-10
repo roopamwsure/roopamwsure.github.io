@@ -1,232 +1,176 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>GKS-5: Governed Knowledge Systems | Roopam W. Sure</title>
+
+  <title>Enterprise AI Is a Platform Problem: GKS-5</title>
+  <meta name="description" content="GKS-5, a reference architecture for governed enterprise AI knowledge systems by Roopam W. Sure.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="GKS-5 is a reference architecture for governed enterprise AI knowledge systems, retrieval-augmented generation, knowledge integrity drift, and production-ready enterprise AI platforms.">
-
+  <!-- Google Scholar citation metadata -->
   <meta name="citation_title" content="Enterprise AI Is a Platform Problem: GKS-5, A Reference Architecture for Governed Knowledge Systems">
-  <meta name="citation_author" content="Roopam W. Sure">
-  <meta name="citation_publication_date" content="2026/05">
+  <meta name="citation_author" content="Sure, Roopam W.">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://roopamwsure.github.io/GKS-5_arXiv_v0.5.pdf">
   <meta name="citation_technical_report_institution" content="Independent Researcher">
-  <meta name="citation_pdf_url" content="https://roopamwsure.github.io/publications/gks-5/GKS-5_arXiv_v0.5.pdf">
-  <meta name="citation_keywords" content="Enterprise AI; Governed Knowledge Systems; GKS-5; Retrieval-Augmented Generation; Knowledge Architecture; Semantic Retrieval; AI Governance; Agentic Systems; Knowledge Integrity Drift; AI Platform Architecture">
 
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      max-width: 980px;
+      max-width: 920px;
       margin: 40px auto;
-      padding: 0 22px;
-      color: #1f2933;
-      background: #ffffff;
+      padding: 0 24px;
+      line-height: 1.6;
+      color: #222;
+      background: #fff;
     }
 
     h1 {
-      font-size: 2.1rem;
-      line-height: 1.2;
-      margin-bottom: 0.35rem;
-      color: #111827;
+      font-size: 30px;
+      line-height: 1.25;
+      margin-bottom: 8px;
     }
 
     h2 {
-      margin-top: 2.2rem;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 0.35rem;
-      color: #111827;
+      margin-top: 32px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 6px;
     }
 
-    .subtitle {
-      font-size: 1.1rem;
-      color: #4b5563;
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
       margin-top: 0;
+      color: #444;
+    }
+
+    a {
+      color: #0645ad;
     }
 
     .meta {
-      margin-top: 1.2rem;
-      padding: 1rem;
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-    }
-
-    .actions {
-      margin: 1.5rem 0 2rem 0;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
+      color: #555;
+      margin-bottom: 24px;
     }
 
     .button {
       display: inline-block;
-      padding: 10px 16px;
+      padding: 10px 14px;
+      border: 1px solid #0645ad;
       border-radius: 6px;
       text-decoration: none;
-      font-weight: 600;
-      border: 1px solid #1f4fd8;
+      margin-right: 10px;
+      margin-top: 8px;
     }
 
-    .primary {
-      background: #1f4fd8;
-      color: white;
+    .button:hover {
+      background: #f2f6ff;
     }
 
-    .secondary {
-      background: white;
-      color: #1f4fd8;
+    .citation {
+      background: #f6f6f6;
+      border-left: 4px solid #ccc;
+      padding: 12px 16px;
+      font-family: Georgia, serif;
     }
 
-    .reader {
-      width: 100%;
-      height: 820px;
-      border: 1px solid #d1d5db;
+    .note {
+      background: #fafafa;
+      border: 1px solid #ddd;
       border-radius: 8px;
-      margin-top: 1rem;
-    }
-
-    blockquote {
-      border-left: 4px solid #1f4fd8;
-      padding-left: 1rem;
-      color: #374151;
-      margin-left: 0;
-      background: #f8fafc;
-      padding-top: 0.4rem;
-      padding-bottom: 0.4rem;
-    }
-
-    .small {
-      color: #6b7280;
-      font-size: 0.95rem;
-    }
-
-    a {
-      color: #1f4fd8;
+      padding: 14px 16px;
     }
   </style>
-
 </head>
 
 <body>
-  <main>
-    <p><a href="/publications/">← Back to publications</a></p>
+  <p><a href="/">← Back to home</a></p>
 
-```
-<h1>Enterprise AI Is a Platform Problem: GKS-5, A Reference Architecture for Governed Knowledge Systems</h1>
+  <h1>Enterprise AI Is a Platform Problem: GKS-5, A Reference Architecture for Governed Knowledge Systems</h1>
 
-<p class="subtitle">
-  A reference architecture for governed enterprise AI knowledge systems, retrieval-augmented generation, and knowledge integrity control.
-</p>
+  <h3>Roopam W. Sure</h3>
 
-<div class="meta">
-  <p><strong>Author:</strong> Roopam W. Sure</p>
-  <p><strong>Affiliation:</strong> Independent Researcher · Ottawa, Ontario, Canada</p>
-  <p><strong>ORCID:</strong> 0009-0008-3720-2497</p>
-  <p><strong>Publication type:</strong> Independent technical report</p>
-  <p><strong>Date:</strong> May 2026</p>
-</div>
+  <p class="meta">
+    Independent Researcher · Ottawa, Ontario, Canada<br>
+    ORCID: 0009-0008-3720-2497<br>
+    Version: May 2026 technical report
+  </p>
 
-<div class="actions">
-  <a class="button primary" href="#read-online">Read the paper online</a>
-  <a class="button secondary" href="/publications/gks-5/GKS-5_arXiv_v0.5.pdf">Download the PDF</a>
-</div>
+  <p>
+    <a class="button" href="/GKS-5_arXiv_v0.5.pdf">Download PDF</a>
+  </p>
 
-<h2>Abstract</h2>
+  <h2>Abstract</h2>
 
-<p>
-  Enterprise adoption of generative AI has outpaced the knowledge infrastructure needed to operate AI systems reliably.
-  A team can build an impressive assistant over a curated folder, a small policy corpus, or a narrow set of service tickets.
-  The harder work begins when the same assistant is expected to operate across document repositories, SaaS platforms,
-  collaboration tools, business applications, and data estates with uneven governance.
-</p>
+  <p>
+    Enterprise adoption of generative AI has outpaced the knowledge infrastructure needed to operate AI systems
+    reliably. A team can build an impressive assistant over a curated folder, a small policy corpus, or a narrow set of
+    service tickets. The harder work begins when the same assistant is expected to operate across document repositories,
+    SaaS platforms, collaboration tools, business applications, and data estates with uneven governance. In that setting,
+    many failures that look like model failures are actually failures in the knowledge path around the model.
+  </p>
 
-<p>
-  In that setting, many failures that look like model failures are actually failures in the knowledge path around the model.
-</p>
+  <p>
+    This article introduces GKS-5, a five-layer reference architecture for Governed Knowledge Systems in enterprise AI.
+    GKS-5 separates five responsibilities: data ingestion, storage and semantic indexing, retrieval, model orchestration,
+    and application integration. It then pairs those layers with six cross-layer controls: metadata, authorization, freshness,
+    observability, evaluation, and versioning. The purpose is to reduce knowledge integrity drift, defined here as the
+    gradual loss of alignment between source systems, metadata, permissions, indexes, retrieval behavior, orchestration
+    logic, and the outputs users see.
+  </p>
 
-<p>
-  This article introduces GKS-5, a five-layer reference architecture for Governed Knowledge Systems in enterprise AI.
-  GKS-5 separates five responsibilities: data ingestion, storage and semantic indexing, retrieval, model orchestration,
-  and application integration. It then pairs those layers with six cross-layer controls: metadata, authorization,
-  freshness, observability, evaluation, and versioning.
-</p>
+  <p>
+    The contribution is a practical architecture and evaluation framework for enterprise AI knowledge systems. It
+    includes a failure-mode taxonomy, a readiness scoring model, an evaluation protocol, and a scenario-based validation
+    using the common case of an internal policy assistant moving from pilot to production. The core claim is deliberately
+    simple: enterprise assistants are rarely durable products by themselves. They are interaction surfaces over deeper
+    knowledge platforms. Better models help, but they do not remove the need for governed ingestion, authorization-aware
+    retrieval, source authority, traceable context assembly, and systematic evaluation.
+  </p>
 
-<p>
-  The purpose is to reduce knowledge integrity drift, defined here as the gradual loss of alignment between source systems,
-  metadata, permissions, indexes, retrieval behavior, orchestration logic, and the outputs users see.
-</p>
+  <h2>Summary</h2>
 
-<blockquote>
-  The core claim is deliberately simple: enterprise assistants are rarely durable products by themselves.
-  They are interaction surfaces over deeper knowledge platforms.
-</blockquote>
+  <p>
+    This technical report introduces GKS-5, a reference architecture for governed enterprise AI knowledge systems.
+    The paper argues that durable enterprise AI requires more than model selection or prompt engineering. Production
+    systems need reliable ingestion, semantic and lexical indexing, authorization-aware retrieval, orchestration controls,
+    metadata discipline, freshness tracking, observability, evaluation, and versioning.
+  </p>
 
-<h2>Summary</h2>
+  <p>
+    The paper is intended for AI platform leaders, enterprise architects, data and AI governance teams, RAG platform
+    teams, and organizations moving generative AI systems from pilot demonstrations to governed production platforms.
+  </p>
 
-<p>
-  GKS-5 argues that durable enterprise AI requires more than model selection or prompt engineering.
-  Production systems need reliable ingestion, semantic and lexical indexing, authorization-aware retrieval,
-  orchestration controls, metadata discipline, freshness tracking, observability, evaluation, and versioning.
-</p>
+  <h2>Keywords</h2>
 
-<p>
-  The paper is intended for AI platform leaders, enterprise architects, data and AI governance teams,
-  retrieval-augmented generation platform teams, and organizations moving generative AI systems from pilot demonstrations
-  to governed production platforms.
-</p>
+  <p>
+    Enterprise AI; Governed Knowledge Systems; GKS-5; Retrieval-Augmented Generation;
+    Knowledge Architecture; Semantic Retrieval; AI Governance; Agentic Systems;
+    Knowledge Integrity Drift; AI Platform Architecture.
+  </p>
 
-<h2>Keywords</h2>
+  <h2>Citation</h2>
 
-<p>
-  Enterprise AI; Governed Knowledge Systems; GKS-5; Retrieval-Augmented Generation; Knowledge Architecture;
-  Semantic Retrieval; AI Governance; Agentic Systems; Knowledge Integrity Drift; AI Platform Architecture
-</p>
+  <p class="citation">
+    Sure, R. W. (2026). <em>Enterprise AI Is a Platform Problem: GKS-5,
+    A Reference Architecture for Governed Knowledge Systems</em>.
+    Independent technical report.
+  </p>
 
-<h2 id="read-online">Read the paper online</h2>
+  <h2>Links</h2>
 
-<p>
-  The paper can be read directly below. Use the download button if you prefer to save a copy.
-</p>
+  <p class="note">     
+    PDF: <a href="/GKS-5_arXiv_v0.5.pdf">GKS-5_arXiv_v0.5.pdf</a>
+  </p>
 
-<p class="small">
-  If the embedded reader does not load on your device, open the PDF directly:
-  <a href="/publications/gks-5/GKS-5_arXiv_v0.5.pdf">GKS-5 PDF</a>.
-</p>
+  <h2>References</h2>
 
-<iframe
-  class="reader"
-  src="/publications/gks-5/GKS-5_arXiv_v0.5.pdf"
-  title="GKS-5 PDF reader">
-</iframe>
-
-<h2>Citation</h2>
-
-<p>
-  Sure, R. W. (2026). <em>Enterprise AI Is a Platform Problem: GKS-5, A Reference Architecture for Governed Knowledge Systems</em>.
-  Independent technical report.
-</p>
-
-<h2>Related work</h2>
-
-<p>
-  See also:
-  <a href="/publications/agl-1/">
-    AGL-1: The Enterprise AI Governance Layer as a Control Plane for Trusted Enterprise Intelligence
-  </a>.
-</p>
-
-<h2>References</h2>
-
-<p>
-  See the PDF for the full reference list.
-</p>
-```
-
-  </main>
+  <p>
+    See the PDF for the full reference list.
+  </p>
 </body>
 </html>
+
 
 
