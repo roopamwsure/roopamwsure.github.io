@@ -9,11 +9,12 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
       color: #222;
+      background: #ffffff;
     }
 
     h1 {
@@ -23,7 +24,7 @@
     }
 
     h2 {
-      margin-top: 32px;
+      margin-top: 34px;
       color: #1f2937;
     }
 
@@ -46,11 +47,27 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
-      margin: 10px 0 24px 0;
+      margin: 10px 10px 24px 0;
     }
 
     .button:hover {
       background: #163a5a;
+    }
+
+    .secondary-button {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #f3f4f6;
+      color: #1f2937;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      border: 1px solid #d1d5db;
+      margin: 10px 0 24px 0;
+    }
+
+    .secondary-button:hover {
+      background: #e5e7eb;
     }
 
     blockquote {
@@ -69,6 +86,31 @@
       border-radius: 6px;
       font-family: Arial, Helvetica, sans-serif;
     }
+
+    .pdf-reader {
+      width: 100%;
+      height: 850px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      margin-top: 16px;
+      background: #f9fafb;
+    }
+
+    .note {
+      color: #666;
+      font-size: 0.95em;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        margin: 24px auto;
+      }
+
+      .pdf-reader {
+        height: 650px;
+      }
+    }
   </style>
 </head>
 
@@ -86,7 +128,11 @@
     <strong>Date:</strong> June 2026
   </div>
 
-  <a class="button" href="./AGL-1_Enterprise_AI_Governance_Layer.pdf" target="_blank">
+  <a class="button" href="#read-online">
+    Read the paper online
+  </a>
+
+  <a class="secondary-button" href="./AGL-1_Enterprise_AI_Governance_Layer.pdf" target="_blank">
     Download the PDF
   </a>
 
@@ -116,6 +162,23 @@
   <p>
     enterprise AI governance; AI control plane; agentic AI; retrieval-augmented generation; enterprise memory;
     policy enforcement; provenance; AI observability; governed intelligence
+  </p>
+
+  <h2 id="read-online">Read the paper online</h2>
+
+  <p>
+    The paper can be read directly below. Use the download button if you prefer to save a copy.
+  </p>
+
+  <iframe
+    class="pdf-reader"
+    src="./AGL-1_Enterprise_AI_Governance_Layer.pdf"
+    title="AGL-1 Enterprise AI Governance Layer PDF">
+  </iframe>
+
+  <p class="note">
+    If the embedded reader does not load on your device, open the PDF directly:
+    <a href="./AGL-1_Enterprise_AI_Governance_Layer.pdf" target="_blank">AGL-1 PDF</a>.
   </p>
 
   <h2>Citation</h2>
