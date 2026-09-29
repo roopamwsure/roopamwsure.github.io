@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <title>CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI</title>
+
+  <meta
+    name="description"
+    content="CAGE-1 is an evaluation framework for assessing authority, policy enforcement, trust, safety, Prebind Assurance, and operational control in enterprise agentic AI deployments."
+  >
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CAGE-1 is an evaluation framework for assessing trust, safety, Prebind Assurance, and operational control in enterprise agentic AI deployments.">
+
+  <!-- Scholarly metadata -->
+  <meta
+    name="citation_title"
+    content="CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI"
+  >
+  <meta name="citation_author" content="Roopam W. Sure">
+  <meta name="citation_publication_date" content="2026/07">
+  <meta name="citation_arxiv_id" content="2607.03510">
+  <meta
+    name="citation_pdf_url"
+    content="https://roopamwsure.github.io/publications/cage-1/CAGE-1_Control_Assurance_Governance_Evaluation.pdf"
+  >
+
+  <link rel="canonical" href="https://roopamwsure.github.io/publications/cage-1/">
 
   <style>
     body {
@@ -12,7 +34,7 @@
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #222;
       background: #ffffff;
     }
@@ -21,37 +43,56 @@
       line-height: 1.2;
       margin-bottom: 10px;
       color: #1f2937;
+      font-size: 2.25rem;
     }
 
     h2 {
-      margin-top: 34px;
+      margin-top: 38px;
       color: #1f2937;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 7px;
     }
 
-    .subtitle {
-      font-size: 1.15em;
-      color: #555;
+    a {
+      color: #1f4e79;
+    }
+
+    .back-link {
       margin-bottom: 24px;
     }
 
+    .subtitle {
+      font-size: 1.18em;
+      color: #555;
+      margin-bottom: 24px;
+      max-width: 900px;
+    }
+
     .meta {
-      color: #666;
-      margin-bottom: 28px;
+      color: #555;
+      margin-bottom: 22px;
+      line-height: 1.75;
+    }
+
+    .actions {
+      margin: 18px 0 32px 0;
     }
 
     .button {
       display: inline-block;
       padding: 12px 18px;
       background: #1f4e79;
-      color: white;
+      color: #ffffff;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
-      margin: 10px 10px 24px 0;
+      font-weight: 700;
+      margin: 6px 8px 6px 0;
+      border: 1px solid #1f4e79;
     }
 
     .button:hover {
       background: #163a5a;
+      text-decoration: none;
     }
 
     .secondary-button {
@@ -61,30 +102,37 @@
       color: #1f2937;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
+      font-weight: 700;
       border: 1px solid #d1d5db;
-      margin: 10px 0 24px 0;
+      margin: 6px 8px 6px 0;
     }
 
     .secondary-button:hover {
       background: #e5e7eb;
+      text-decoration: none;
     }
 
     blockquote {
       border-left: 4px solid #1f4e79;
-      padding-left: 16px;
+      padding: 14px 18px;
       color: #444;
-      margin: 24px 0;
+      margin: 26px 0;
       background: #f7f9fb;
-      padding-top: 10px;
-      padding-bottom: 10px;
     }
 
     .citation {
       background: #f4f4f4;
-      padding: 12px;
+      padding: 16px;
       border-radius: 6px;
-      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .identifier {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 16px;
     }
 
     .pdf-reader {
@@ -99,12 +147,24 @@
     .note {
       color: #666;
       font-size: 0.95em;
-      margin-top: 8px;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      color: #666;
+      font-size: 0.92em;
     }
 
     @media (max-width: 768px) {
       body {
         margin: 24px auto;
+      }
+
+      h1 {
+        font-size: 1.8rem;
       }
 
       .pdf-reader {
@@ -116,57 +176,130 @@
 
 <body>
 
-  <p><a href="/">← Back to publications</a></p>
+  <div class="back-link">
+    <a href="/">← Back to publications</a>
+  </div>
 
-  <h1>CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI</h1>
+  <h1>
+    CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI
+  </h1>
 
   <div class="subtitle">
-    A framework for assessing trust, safety, Prebind Assurance, and operational control in enterprise agentic AI deployments.
+    An evaluation framework for authority, trust, safety, Prebind Assurance,
+    and operational control in enterprise agentic AI deployments.
   </div>
 
   <div class="meta">
     <strong>Author:</strong> Roopam W. Sure<br>
-    <strong>Publication type:</strong> Independent technical report<br>
-    <strong>Date:</strong> July 2026
+    <strong>Publication type:</strong> arXiv preprint<br>
+    <strong>Date:</strong> July 2026<br>
+    <strong>arXiv:</strong> 2607.03510<br>
+    <strong>DOI:</strong> 10.48550/arXiv.2607.03510
   </div>
 
-  <a class="button" href="#read-online">Read the paper online</a>
-  <a class="secondary-button" href="./CAGE-1_Control_Assurance_Governance_Evaluation.pdf" target="_blank" rel="noopener">
-    Download the PDF
-  </a>
+  <div class="actions">
+
+    <a class="button" href="#read-online">
+      Read the paper online
+    </a>
+
+    <a
+      class="secondary-button"
+      href="./CAGE-1_Control_Assurance_Governance_Evaluation.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      Download PDF
+    </a>
+
+    <a
+      class="secondary-button"
+      href="https://arxiv.org/abs/2607.03510"
+      target="_blank"
+      rel="noopener"
+    >
+      View on arXiv
+    </a>
+
+  </div>
 
   <h2>Abstract</h2>
 
   <p>
-    Enterprise artificial intelligence is moving from experimentation into operational workflows.
-    Organizations are beginning to deploy agents that plan, retrieve, remember, call tools, update systems,
-    and coordinate work across applications.
+    Enterprise artificial intelligence is moving from experimentation into
+    operational workflows. Organizations are beginning to deploy agents that
+    plan, retrieve, remember, call tools, update systems, and coordinate work
+    across applications.
   </p>
 
   <p>
-    This paper introduces CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI.
-    CAGE-1 is an evaluation framework for deciding whether enterprise agents are ready for deployment.
-    It assesses authority, policy enforcement, retrieval quality, memory integrity, tool safety, auditability,
-    human oversight, conflict handling, safe failure, operational readiness, business fitness, and Prebind Assurance.
+    This paper introduces CAGE-1: Control, Assurance, and Governance Evaluation
+    for Enterprise Agentic AI. CAGE-1 is an evaluation framework for deciding
+    whether enterprise agents are ready for deployment. It assesses authority,
+    policy enforcement, retrieval quality, memory integrity, tool safety,
+    auditability, human oversight, conflict handling, safe failure, operational
+    readiness, business fitness, and Prebind Assurance.
   </p>
 
   <blockquote>
-    Task success is not enough. Enterprise agents must be evaluated for control, evidence, safe failure,
-    and whether invalid actions are stopped before they become binding business consequences.
+    Task success is not enough. Enterprise agents must be evaluated for control,
+    evidence, safe failure, and whether invalid actions are stopped before they
+    become binding business consequences.
   </blockquote>
+
+  <h2>Research Focus</h2>
+
+  <p>
+    CAGE-1 evaluates whether consequential autonomous actions remain governed
+    before they become operationally effective. The framework treats authority,
+    policy, evidence, memory, tool use, auditability, human oversight, safe
+    failure, and business fitness as distinct assurance concerns rather than
+    reducing agent evaluation to task completion or model quality alone.
+  </p>
+
+  <p>
+    A central concept introduced in CAGE-1 is <strong>Prebind Assurance</strong>:
+    the evaluated ability to establish that an agentic action remains controlled
+    before it crosses a protected business-consequence boundary.
+  </p>
 
   <h2>Keywords</h2>
 
   <p>
-    Agentic AI; Enterprise AI Governance; AI Assurance; AI Evaluation; Runtime Governance; AI Auditability;
-    Human Oversight; Tool Safety; Memory Integrity; Retrieval Governance; Conflict Semantics;
-    Prebind Assurance; Consequence Boundary; No-Bind Execution; Replayability; Enterprise AI Readiness.
+    Agentic AI; Enterprise AI Governance; AI Assurance; AI Evaluation;
+    Runtime Governance; AI Auditability; Human Oversight; Tool Safety;
+    Memory Integrity; Retrieval Governance; Conflict Semantics;
+    Prebind Assurance; Consequence Boundary; No-Bind Execution;
+    Replayability; Enterprise AI Readiness.
   </p>
 
-  <h2 id="read-online">Read the paper online</h2>
+  <h2>Publication Record</h2>
+
+  <div class="identifier">
+    <strong>arXiv:</strong>
+    <a
+      href="https://arxiv.org/abs/2607.03510"
+      target="_blank"
+      rel="noopener"
+    >
+      arXiv:2607.03510
+    </a>
+    <br>
+
+    <strong>DOI:</strong>
+    <a
+      href="https://doi.org/10.48550/arXiv.2607.03510"
+      target="_blank"
+      rel="noopener"
+    >
+      10.48550/arXiv.2607.03510
+    </a>
+  </div>
+
+  <h2 id="read-online">Read the Paper</h2>
 
   <p>
-    The paper can be read directly below. Use the download button if you prefer to save a copy.
+    The complete paper is hosted here and is also available through arXiv.
   </p>
 
   <iframe
@@ -176,24 +309,46 @@
   </iframe>
 
   <p class="note">
-    If the embedded reader does not load on your device, open the PDF directly:
-    <a href="./CAGE-1_Control_Assurance_Governance_Evaluation.pdf" target="_blank" rel="noopener">CAGE-1 PDF</a>.
+    If the embedded reader does not load on your device,
+    <a
+      href="./CAGE-1_Control_Assurance_Governance_Evaluation.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      open the PDF directly
+    </a>.
   </p>
 
   <h2>Citation</h2>
 
   <div class="citation">
-    R. W. Sure, “CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI,”
-    Independent technical report, July 2026.
+    R. W. Sure,
+    “CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI,”
+    arXiv:2607.03510, 2026.
+    DOI: 10.48550/arXiv.2607.03510.
   </div>
 
-  <h2>Related work</h2>
+  <h2>Related Work</h2>
 
   <p>
-    This paper follows the GKS-5 and AGL-1 sequence:
-    <a href="../gks-5/">GKS-5: Governed Knowledge Systems</a> and
+    CAGE-1 follows the earlier GKS-5 and AGL-1 research sequence:
+    <a href="../gks-5/">GKS-5: Governed Knowledge Systems</a>
+    and
     <a href="../agl-1/">AGL-1: Enterprise AI Governance Layer</a>.
   </p>
+
+  <p>
+    The CAGE research line is continued in
+    <a href="../cage-2/">
+      CAGE-2: From Decision to Effect - Consequence Assurance for Autonomous AI Systems
+    </a>,
+    which extends assurance beyond the decision boundary into execution,
+    verification, Effect, uncertainty, reconciliation, and assurance lineage.
+  </p>
+
+  <footer>
+    © Roopam W. Sure. Independent technical publications and research.
+  </footer>
 
 </body>
 </html>
