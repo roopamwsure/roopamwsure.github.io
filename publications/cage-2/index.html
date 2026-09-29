@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>CAGE-2: From Decision to Effect - Consequence Assurance for Autonomous AI Systems</title>
+
+  <meta
+    name="description"
+    content="CAGE-2 introduces Consequence Assurance for autonomous AI systems, separating permission, execution, verification, effect, uncertainty, reconciliation, and assurance lineage."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+      background: #ffffff;
+    }
+
+    h1 {
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: #1f2937;
+    }
+
+    h2 {
+      margin-top: 34px;
+      color: #1f2937;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .meta {
+      color: #666;
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #1f4e79;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 10px 10px 24px 0;
+    }
+
+    .button:hover {
+      background: #163a5a;
+    }
+
+    .secondary-button {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #f3f4f6;
+      color: #1f2937;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      border: 1px solid #d1d5db;
+      margin: 10px 10px 24px 0;
+    }
+
+    .secondary-button:hover {
+      background: #e5e7eb;
+    }
+
+    blockquote {
+      border-left: 4px solid #1f4e79;
+      padding: 12px 16px;
+      color: #444;
+      margin: 24px 0;
+      background: #f7f9fb;
+    }
+
+    .citation {
+      background: #f4f4f4;
+      padding: 14px;
+      border-radius: 6px;
+    }
+
+    .pdf-reader {
+      width: 100%;
+      height: 900px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      margin-top: 16px;
+      background: #f9fafb;
+    }
+
+    .note {
+      color: #666;
+      font-size: 0.95em;
+      margin-top: 8px;
+    }
+
+    code {
+      background: #f3f4f6;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        margin: 24px auto;
+      }
+
+      .pdf-reader {
+        height: 650px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+    <a href="/">← Back to publications</a>
+  </p>
+
+  <h1>CAGE-2: From Decision to Effect</h1>
+
+  <div class="subtitle">
+    Consequence Assurance for Autonomous AI Systems
+  </div>
+
+  <div class="meta">
+    <strong>Author:</strong> Roopam W. Sure<br>
+    <strong>Publication type:</strong> Technical paper / arXiv preprint<br>
+    <strong>Date:</strong> September 2026<br>
+    <strong>Pages:</strong> 17<br>
+    <strong>Figures:</strong> 5
+  </div>
+
+  <a
+    class="button"
+    href="./CAGE-2_From_Decision_to_Effect.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    Download PDF
+  </a>
+
+  <a
+    class="secondary-button"
+    href="https://github.com/roopamwsure/cage"
+    target="_blank"
+    rel="noopener"
+  >
+    Reference Implementation
+  </a>
+
+  <a
+    class="secondary-button"
+    href="https://pypi.org/project/cage-assurance/"
+    target="_blank"
+    rel="noopener"
+  >
+    Python Package
+  </a>
+
+  <h2>Abstract</h2>
+
+  <p>
+    Autonomous AI systems increasingly act on external systems rather than merely
+    produce recommendations. They can modify access rights, release payments,
+    change infrastructure, delete records, invoke enterprise services, and
+    initiate other operations with durable business consequences.
+  </p>
+
+  <p>
+    Existing identity, authorization, policy, and runtime-control mechanisms can
+    determine whether an agent or request may proceed, but those controls do not
+    by themselves establish what ultimately became true in the external system.
+  </p>
+
+  <p>
+    CAGE-2 introduces <strong>Consequence Assurance</strong>, an architectural
+    model for preserving assurance across the transition from an autonomous
+    decision to an externally verified business effect. It extends the Prebind
+    Assurance model introduced in CAGE-1 and subsequently implemented in CAGE-lite.
+  </p>
+
+  <p>The central invariant is:</p>
+
+  <blockquote>
+    <strong>Decision ≠ Effect</strong>
+  </blockquote>
+
+  <p>
+    CAGE-2 introduces stable Consequence identity, separates Evaluation Attempts
+    from ExecutionAttempts, formalizes Consequence Custody for controlled external
+    execution, separates execution observations from authoritative verification,
+    represents unresolved outcomes through <code>EFFECT_UNKNOWN</code>, and
+    preserves assurance history through DecisionProof, EffectProof, and Warrants.
+  </p>
+
+  <h2>Research Contribution</h2>
+
+  <p>
+    CAGE-2 develops a consequence-centric assurance model for autonomous systems
+    in which permission, execution, observation, verification, and externally
+    evidenced effect remain distinct.
+  </p>
+
+  <p>
+    The work introduces Consequence Custody across the external execution
+    boundary and an assurance-lineage model based on DecisionProof, EffectProof,
+    and Warrants.
+  </p>
+
+  <blockquote>
+    A system may know what it permitted. It may know what it attempted.
+    Only evidence can establish what became true.
+  </blockquote>
+
+  <h2>Reference Implementation</h2>
+
+  <p>
+    The architecture is implemented in the open-source
+    <code>cage-assurance</code> Python SDK.
+  </p>
+
+  <p>
+    The evaluated release is <code>cage-assurance==0.7.1</code>.
+  </p>
+
+  <p>
+    The reference implementation includes guarded execution, Consequence
+    Custody, explicit uncertainty handling, verification, reconciliation,
+    consequence-level idempotency, and Warrant lineage.
+  </p>
+
+  <p>
+    <a
+      class="button"
+      href="https://github.com/roopamwsure/cage"
+      target="_blank"
+      rel="noopener"
+    >
+      View CAGE on GitHub
+    </a>
+
+    <a
+      class="secondary-button"
+      href="https://pypi.org/project/cage-assurance/"
+      target="_blank"
+      rel="noopener"
+    >
+      Install from PyPI
+    </a>
+  </p>
+
+  <h2>Read the Paper</h2>
+
+  <p>
+    The full paper can be read directly below or downloaded as a PDF.
+  </p>
+
+  <iframe
+    class="pdf-reader"
+    src="./CAGE-2_From_Decision_to_Effect.pdf"
+    title="CAGE-2 From Decision to Effect PDF">
+  </iframe>
+
+  <p class="note">
+    If the embedded PDF reader does not load on your device,
+    <a
+      href="./CAGE-2_From_Decision_to_Effect.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      open the PDF directly
+    </a>.
+  </p>
+
+  <h2>arXiv</h2>
+
+  <p>
+    CAGE-2 has been submitted to arXiv. The permanent arXiv identifier and link
+    will be added here once assigned.
+  </p>
+
+  <h2>Citation</h2>
+
+  <div class="citation">
+    R. W. Sure,
+    “CAGE-2: From Decision to Effect — Consequence Assurance for Autonomous AI Systems,”
+    arXiv preprint, September 2026.
+  </div>
+
+  <h2>Related Work</h2>
+
+  <p>
+    CAGE-2 extends the consequence-boundary assurance model introduced in
+    <a href="../cage-1/">
+      CAGE-1: Control, Assurance, and Governance Evaluation for Enterprise Agentic AI
+    </a>.
+  </p>
+
+  <p>
+    The open-source implementation is available through the
+    <a
+      href="https://github.com/roopamwsure/cage"
+      target="_blank"
+      rel="noopener"
+    >
+      CAGE GitHub repository
+    </a>.
+  </p>
+
+</body>
+
+</html>
